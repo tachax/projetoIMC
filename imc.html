@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+    <head>
+        <title>Cálculo do IMC</title>
+        <meta charset='utf-8'>
+        <link rel='stylesheet' href='imc.css'>
+        <script src='imc.JS'></script>
+    </head>
+
+    <body class='corpo'>
+
+        <h1>Cálculo do IMC</h1>
+        <h2>Digite sua altura e peso nos campos abaixo:</h2>
+
+        <div class='div-input'>
+            <label class='label' for='altura'>Altura:</label>
+            <input class='input' type='number' id='altura' step='0.01'>     <!-- faz a "caixinha" para inserir os dados -->
+        </div>
+        
+        <div class='div-input'>
+            <label class='label' for='peso'>Peso:</label>
+            <input class='input' type='number' id='peso' step='0.01'>
+        </div>
+
+        <br>
+
+        <!-- insere os botões na tela || os botões contém as funçõs do js -->
+        <button class='botao' type='button' onclick='calcularIMC()'>Calcular</button>
+        <button class='limpar' type='button' onclick='limpar()'>Limpar</button>
+
+        <!-- o resultado do IMC na tela -->
+        <p id='resultado' class='resultado'></p>
+        <p id='descricaoResultado' class='resultado'></p>
+
+
+    </body>
+</html>
